@@ -4,6 +4,10 @@
 using namespace std;
 
 //prototypes:
+bool isPositive(int);
+void fillWith ( vector<int>&, int );
+void printVector( vector<int> );
+
 
 
 /////DO NOT TOUCH/////
@@ -42,3 +46,31 @@ int main()
 }
 
 //function definitions
+
+bool isPositive ( int first )
+{
+  if ( first > 0 )
+  {
+    return true;
+  }
+  else 
+  {
+    return false; 
+  }
+}
+
+void fillWith ( vector<int>& first, int second )
+{
+  for ( int r=0; r < first.size(); r++)
+  {
+    first[r] = second;  
+  }
+}
+
+void printVector ( vector<int> first)
+{
+  for ( int r=0; r < first.size(); r++)
+  {
+    cout << first[r];  
+  }
+}
