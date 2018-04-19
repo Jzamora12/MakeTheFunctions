@@ -71,6 +71,6 @@ void printVector ( vector<int> first)
 {
   for ( int r=0; r < first.size(); r++)
   {
-    cout << first[r];  
+    cout << first[r] << " ";  
   }
 }
